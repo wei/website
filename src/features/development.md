@@ -81,7 +81,7 @@ Parcel caches everything it builds to disk. If you restart the dev server, Parce
 
 By default, the cache is stored in the `.parcel-cache` folder inside your project. You should add this folder to your `.gitignore` (or equivalent) so that it is not committed in your repo. You can also override the location of the cache using the `--cache-dir` CLI option.
 
-Caching can also be disabled using the `--no-cache` flag. Note that this only disables *reading* from the cache – a `.parcel-cache` folder will still be created.
+Caching can also be disabled using the `--no-cache` flag. Note that this only disables _reading_ from the cache – a `.parcel-cache` folder will still be created.
 
 ## HTTPS
 
@@ -127,9 +127,9 @@ In this JSON file, you specify an object where every key is a pattern against wh
 
 This example would cause `http://localhost:1234/api/endpoint` to be proxied to `http://localhost:8000/endpoint`.
 
-### `.proxyrc.js`
+### `.proxyrc.js`/`proxyrc.ts`
 
-For more complex configurations, a `.proxyrc.js` file allows you to attach any [connect](https://github.com/senchalabs/connect)-compatible middleware. First, make sure you install `http-proxy-middleware` into your project. This example has the same behaviour as the `.proxyrc` version above.
+For more complex configurations, a `.proxyrc.js` or `.proxyrc.ts` file allows you to attach any [connect](https://github.com/senchalabs/connect)-compatible middleware. First, make sure you install `http-proxy-middleware` into your project. This example has the same behaviour as the `.proxyrc` version above.
 
 {% sample %}
 {% samplefile ".proxyrc.js" %}
