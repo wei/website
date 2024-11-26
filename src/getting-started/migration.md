@@ -262,7 +262,7 @@ Unlike Parcel 1, your Babel config overrides the default in Parcel 2 rather than
 
 ### Importing GraphQL
 
-When import GraphQL files (`.gql`), imports are still resolved/inlined (using `graphql-import-macro`), but you now get the processed GraphQL query as a string instead of an Apollo AST.
+When importing GraphQL files (`.gql`), imports are still resolved/inlined (using `graphql-import-macro`), but you now get the processed GraphQL query as a string instead of an Apollo AST.
 
 {% migration %}
 {% samplefile "DataComponent.js" %}
